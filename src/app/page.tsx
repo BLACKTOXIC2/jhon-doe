@@ -389,7 +389,7 @@ export default function Home() {
         <div className="absolute inset-0 dotted-pattern opacity-5" />
         <div className="responsive-container relative">
           <div className="text-center mb-8 sm:mb-12">
-            <Badge variant="outline" className="mb-4 animate-fade-up">Let's Connect</Badge>
+            <Badge variant="outline" className="mb-4 animate-fade-up">Let&apos;s Connect</Badge>
             <h2 className="heading-responsive mb-4 animate-fade-up bg-gradient-to-b from-foreground to-muted-foreground bg-clip-text text-transparent">
               Ready to Transform Your Ideas into Reality?
             </h2>

@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
-import { Suspense } from "react";
 import { 
   Github, 
   Linkedin, 
@@ -19,10 +18,8 @@ import {
   Star,
   Calendar,
   Building,
-  Award
 } from "lucide-react";
 import ContactForm from "@/components/contact-form";
-import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
   title: 'John Doe - Full Stack Web Developer',
@@ -64,17 +61,6 @@ interface Skill {
   name: string;
   level: number;
   category: 'frontend' | 'backend' | 'devops' | 'other';
-}
-
-interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  image: string;
-  demo: string;
-  github: string;
-  featured: boolean;
-  completionDate: string;
 }
 
 // Data with improved structure and more details
@@ -288,7 +274,7 @@ export default function Home() {
                       <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-body-small text-muted-foreground italic">"{testimonial.content}"</p>
+                  <p className="text-body-small text-muted-foreground italic">&ldquo;{testimonial.content}&rdquo;</p>
                 </CardContent>
               </Card>
             ))}
@@ -409,7 +395,7 @@ export default function Home() {
             </h2>
             <p className="text-responsive text-muted-foreground max-w-xl mx-auto">
               Whether you need a stunning website, a robust web application, or strategic technical consulting,
-              I'm here to help bring your vision to life.
+              I&apos;m here to help bring your vision to life.
             </p>
           </div>
           

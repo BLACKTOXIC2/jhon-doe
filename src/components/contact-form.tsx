@@ -39,7 +39,7 @@ export default function ContactForm() {
       console.log('Form submitted:', data);
       toast.success('Message sent successfully! I\'ll get back to you soon.');
       reset();
-    } catch (error) {
+    } catch {
       toast.error('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);

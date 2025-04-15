@@ -104,7 +104,7 @@ export default function ContactPage() {
         timeline: '',
         message: ''
       });
-    } catch (error) {
+    } catch {
       toast.error('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
